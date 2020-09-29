@@ -33,7 +33,7 @@ module.exports = {
   devServer: {
     contentBase: commonPaths.outputPath,
     compress: true,
-    hot: true,
+    hot: false,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };
