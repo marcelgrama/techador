@@ -55,14 +55,19 @@
     "@babel/plugin-transform-react-inline-elements": "7.10.4",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "add": "^2.0.6",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "core-js": "3.6.5",
-    "lodash": "4.17.20",
+    "emailjs-com": "^2.6.3",
+    "joi": "^17.2.1",
+    "lodash": "^4.17.20",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-hot-loader": "4.13.0"
+    "react-hot-loader": "4.13.0",
+    "yarn": "^1.22.10"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
