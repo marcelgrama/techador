@@ -5,10 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from '../../components/Typography';
-import TextField from '../../components/TextField';
-import Snackbar from '../../components/Snackbar';
-import Button from '../../components/Button';
 import contactUsImg from '../../static/about2.jpg';
+import Form from '../../components/Email/Form';
 
 const styles = (theme) => ({
   root: {
@@ -22,6 +20,7 @@ const styles = (theme) => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
+    flexDirection: 'column',
     backgroundColor: theme.palette.warning.main,
     padding: theme.spacing(8, 3),
   },
@@ -61,41 +60,16 @@ const styles = (theme) => ({
 
 function ProductCTA(props) {
   const { classes } = props;
-  const [open, setOpen] = React.useState(false);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <Container className={classes.root} component="section">
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form onSubmit={handleSubmit} className={classes.cardContent}>
-              <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
-              </Typography>
-              <Typography variant="h5">Lorem ipsum dolor sit amet</Typography>
-              <TextField
-                noBorder
-                className={classes.textField}
-                placeholder="Your email"
-              />
-              <Button
-                type="submit"
-                color="primary"
-                variant="contained"
-                className={classes.button}
-              >
-                Keep me updated
-              </Button>
-            </form>
+            <Typography variant="h2" component="h2" gutterBottom>
+              Receive offers
+            </Typography>
+            <Form />
           </div>
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
@@ -109,11 +83,6 @@ function ProductCTA(props) {
           </Hidden>
         </Grid>
       </Grid>
-      <Snackbar
-        open={open}
-        onClose={handleClose}
-        message="We will send you our best offers, once a week."
-      />
     </Container>
   );
 }
