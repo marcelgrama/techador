@@ -24,11 +24,6 @@
     }
   },
   "jest": {
-    "testEnvironment": "jsdom",
-    "moduleDirectories": [
-      "src",
-      "node_modules"
-    ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
       "\\.(jpg|gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
@@ -36,15 +31,7 @@
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
-    },
-    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
-    "moduleFileExtensions": [
-      "css",
-      "scss",
-      "js",
-      "json",
-      "jsx"
-    ]
+    }
   },
   "repository": "https://github.com/marcelgrama/techador.git",
   "author": "MarcelGrama",
