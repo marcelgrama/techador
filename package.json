@@ -50,8 +50,8 @@
   "author": "MarcelGrama",
   "private": true,
   "engines": {
-    "node": ">=8",
-    "npm": ">=3"
+    "npm": "6.x",
+    "node": "14.x"
   },
   "dependencies": {
     "@babel/plugin-transform-react-constant-elements": "7.10.4",
