@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
 import Typography from '../../components/Typography';
-import TextField from '../../components/TextField';
+import TextField from '../../components/Textfield';
 import facebookIcon from '../../static/facebook.png';
 import instagramIcon from '../../static/instagram.png';
 
