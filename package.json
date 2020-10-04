@@ -4,10 +4,13 @@
   "description": "Techador solutions platform",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
-    "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
-    "test": "jest --watchAll --coverage"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "jest --watchAll --coverage",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "lint-staged": {
     "*.{js,jsx,scss,css,md}": [
@@ -67,6 +70,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-hot-loader": "4.13.0",
+    "serve": "^11.3.2",
     "yarn": "^1.22.10"
   },
   "resolutions": {
